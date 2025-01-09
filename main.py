@@ -108,8 +108,8 @@ elif option == "Galeri Sertifikat":
     # Subheading: Competition Certificates
     st.subheader("🏆 Sertifikat Kejuaraan")
     competition_images = [
-        "./sertifikat/wreckit.jpg",
-        "./sertifikat/wreckit.jpg",
+        "./sertifikat/koalabora.jpg",
+        "./sertifikat/ctfunisa.png",
         "./sertifikat/wreckit.jpg"
     ]
     competition_captions = [
