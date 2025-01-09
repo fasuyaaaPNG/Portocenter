@@ -86,7 +86,7 @@ if option == "Beranda":
             st.image(cert["image"], caption=cert["caption"], use_container_width=True)
 
 # Certificate Gallery Page
-elif option == "Certificate Gallery":
+elif option == "Galeri Sertifikat":
     # Custom CSS for consistent image height
     st.markdown(
         """
@@ -103,10 +103,10 @@ elif option == "Certificate Gallery":
         unsafe_allow_html=True
     )
 
-    st.header("Certificate Gallery")
+    st.header("Galeri Sertifikat")
     
     # Subheading: Competition Certificates
-    st.subheader("🏆 Competition Certificates")
+    st.subheader("🏆 Sertifikat Kejuaraan")
     competition_images = [
         "./sertifikat/wreckit.jpg",
         "./sertifikat/wreckit.jpg",
@@ -124,7 +124,7 @@ elif option == "Certificate Gallery":
             st.image(image, caption=competition_captions[idx], use_container_width=True)
 
     # Subheading: Training Certificates
-    st.subheader("📚 Training Certificates")
+    st.subheader("📚 Sertifikat Pelatihan")
     training_images = [
         "./sertifikat/revou.jpg",
         "./sertifikat/DicodingDevOps/dicodingdevops.jpg",
@@ -190,6 +190,5 @@ elif option == "Certificate Gallery":
             st.image(image, caption=training_captions[idx], use_container_width=True)
 
 # Project Page
-elif option == "Project":
-    st.header("Project")
-    st.write("This is the Project page.")
+elif option == "Proyek":
+    st.header("Proyek")
