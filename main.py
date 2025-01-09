@@ -60,7 +60,7 @@ if option == "Beranda":
     st.divider()
     st.subheader("📁 Proyek Terbaru")
     latest_projects = [
-        {"judul": "NATIX", "deskripsi": "Natix merupakan program untuk memudahkan penggunaan Nativefier tanpa perlu menginstal dependensi secara manual satu per satu dan tersedia untuk berbagai platform mulai dari Windows, MacOS (High Sierra ke atas), hingga Linux.", "link": "https://github.com/fasuyaaaPNG/Natix", "image": "./project/natix.png"},
+        {"judul": "NATIX", "deskripsi": "Natix merupakan program untuk memudahkan penggunaan Nativefier tanpa perlu menginstal dependensi secara manual satu per satu dan tersedia untuk berbagai platform mulai dari Windows, MacOS (High Sierra ke atas), hingga Linux.", "link": "https://github.com/fasuyaaaPNG/Natix/releases", "image": "./project/natix.png"},
         {"judul": "Tildha AI", "deskripsi": "Tildha.AI, asisten kesehatan berbasis kecerdasan buatan, menggunakan bahasa Python dan berbagai pustaka. Proyek ini dirancang untuk memastikan efektivitas dan stabilitasnya, berdasarkan kumpulan data penelitian kami.", "link": "https://github.com/fasuyaaaPNG/Tildha.ai/blob/main/Tildha_ai_Release.ipynb", "image": "./project/tildha.png"},
         {"judul": "Tripify (Proyek RevoU Course)", "deskripsi": "Web statis ini saya buat untuk melengkapi tugas akhir dari pelatihan 'RevoU Software Engineer' yang diselenggarakan oleh RevoU.", "link": "https://revou-frontend-engineering-gobljd61b-fasuyaaapngs-projects.vercel.app/", "image": "./project/tripify.png"},
     ]
