@@ -189,6 +189,28 @@ elif option == "Galeri Sertifikat":
         with next(cols):
             st.image(image, caption=training_captions[idx], use_container_width=True)
 
-# Project Page
 elif option == "Proyek":
-    st.header("Proyek")
+    st.header("📂 Proyek")
+    
+    projects = [
+        {"judul": "NATIX", "deskripsi": "Natix merupakan program untuk memudahkan penggunaan Nativefier tanpa perlu menginstal dependensi secara manual satu per satu dan tersedia untuk berbagai platform mulai dari Windows, MacOS (High Sierra ke atas), hingga Linux.", "link": "https://github.com/fasuyaaaPNG/Natix/releases", "image": "./project/natix.png"},
+        {"judul": "Tildha AI", "deskripsi": "Tildha.AI, asisten kesehatan berbasis kecerdasan buatan, menggunakan bahasa Python dan berbagai pustaka. Proyek ini dirancang untuk memastikan efektivitas dan stabilitasnya, berdasarkan kumpulan data penelitian kami.", "link": "https://github.com/fasuyaaaPNG/Tildha.ai/blob/main/Tildha_ai_Release.ipynb", "image": "./project/tildha.png"},
+        {"judul": "Tripify (Proyek RevoU Course)", "deskripsi": "Web statis ini saya buat untuk melengkapi tugas akhir dari pelatihan 'RevoU Software Engineer' yang diselenggarakan oleh RevoU.", "link": "https://revou-frontend-engineering-gobljd61b-fasuyaaapngs-projects.vercel.app/", "image": "./project/tripify.png"},
+        {"judul": "Linktree SENAKA", "deskripsi": "Situs yang saya buat untuk ekstrakulikuler saya di sekolah. Situs ini bertujuan untuk memudahkan calon anggota menemukan berbagai informasi serta pendaftaran melalui situs ini.", "link": "https://linkhub-senaka-py7f1z1mi-fasuyaaapngs-projects.vercel.app/", "image": "./project/linktreesenaka.jpg"},
+        {"judul": "Website SENAKA", "deskripsi": "Situs yang saya buat untuk ekstrakulikuler saya di sekolah. Situs ini bertujuan sebagai pengenalan ekstrakulikuler SENAKA terhadap para anggota baru. Situs ini juga menjadi informasi tambahan untuk para calon anggota yang akan mendftar. ", "link": "https://web-senaka-9ctnrw9al-fasuyaaapngs-projects.vercel.app/", "image": "./project/websenaka.jpg"},
+        {"judul": "Website Laporan PKL", "deskripsi": "Situs yang saya buat untuk membantu guru saya dalam menerima laporan magang dari para siswa. Situs ini tidak menggunakan database namun menggunakan drive dan excel sebagai penyimpanannya", "link": "https://form-laporan-plfvblc1f-fasuyaaapngs-projects.vercel.app/", "image": "./project/pkl.png"},
+    ]
+    
+    st.subheader("🛠️ Proyek yang Sedang Dikerjakan")
+    st.write("Berikut adalah proyek yang saat ini sedang dalam proses pengerjaan:")
+
+
+    st.divider() 
+
+    st.subheader("✅ Proyek yang Sudah Selesai")
+    st.write("Berikut adalah daftar proyek yang telah selesai dikerjakan:")
+    for project in projects:
+        st.image(project["image"], width=300, use_container_width=False)
+        st.write(f"**{project['judul']}**")
+        st.write(project["deskripsi"])
+        st.markdown(f"[Lihat Proyek]({project['link']})")
