@@ -28,7 +28,7 @@ if option == "Beranda":
     st.markdown(
         """
         <p align="center">
-          <a href="https://github.com/fasuyaaaPNG"><img src="https://readme-typing-svg.herokuapp.com/?lines=CTF%20Player;Full%20Stack%20Developer;Explore%20new%20things;Always%20learning%20new%20technology;110100011000011101001&font=Pacifico&center=true&width=650&height=120&color=58a6ff&vCenter=true&size=45"></a>
+          <a href="https://github.com/fasuyaaaPNG"><img src="https://readme-typing-svg.herokuapp.com/?lines=011010000110000101101001;CTF%20Player;Full%20Stack%20Developer;Explore%20new%20things;Always%20learning%20new%20technology&font=Pacifico&center=true&width=650&height=120&color=58a6ff&vCenter=true&size=45"></a>
         </p>
         """,
         unsafe_allow_html=True
@@ -136,13 +136,13 @@ if option == "Beranda":
     st.markdown(
         """
         <div style="display: flex; gap: 20px;">
-            <a href="https://www.linkedin.com/in/dhavinfasya" target="_blank" style="text-decoration: none;">
+            <a href="https://www.linkedin.com/in/dhavin-fasya-alviyanto-20hmsoex00/" target="_blank" style="text-decoration: none;">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
             </a>
             <a href="https://github.com/fasuyaaaPNG" target="_blank" style="text-decoration: none;">
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40">
             </a>
-            <a href="https://www.instagram.com/dhavinfasya" target="_blank" style="text-decoration: none;">
+            <a href="https://www.instagram.com/vinfasss" target="_blank" style="text-decoration: none;">
                 <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" width="40">
             </a>
         </div>
