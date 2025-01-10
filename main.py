@@ -187,7 +187,15 @@ elif option == "Galeri Sertifikat":
     st.header("Galeri Sertifikat")
     
     # Subheading: Competition Certificates
-    st.subheader("🏆 Sertifikat Kejuaraan")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjMzN2FiM29sZ2p0eWNnZHlqMmJzbXFhczNsbWMxdTZlZTFtMDF6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohhwJPSL00H2r6Rhe/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Sertifikat kejuaraan
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     competition_images = [
         "./sertifikat/koalabora.jpg",
         "./sertifikat/ctfunisa.png",
@@ -205,7 +213,15 @@ elif option == "Galeri Sertifikat":
             st.image(image, caption=competition_captions[idx], use_container_width=True)
 
     # Subheading: Training Certificates
-    st.subheader("📚 Sertifikat Pelatihan")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJ6c2hlNDdsMTNuNGM4cDY3MHZnNnphNzkzcGc5d21ubGR6eWsxayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kPdP6iIRYP0NoXdGDS/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Sertifikat pelatihan
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     training_images = [
         "./sertifikat/revou.jpg",
         "./sertifikat/DicodingDevOps/dicodingdevops.jpg",
@@ -271,7 +287,7 @@ elif option == "Galeri Sertifikat":
             st.image(image, caption=training_captions[idx], use_container_width=True)
 
 elif option == "Proyek":
-    st.header("📂 Proyek")
+    st.header("Proyek")
     
     on_going = [
         {"judul": "AI PPDB Stemba", "deskripsi": "Sebuah AI untuk membantu proses PPDB sebagai ganti untuk memudahkan admin sekolah dalam menjawab pertanyaan terkait PPDB. Proyek ini sedang dalam proses sehingga belum ada preview untuk proyeknya", "link": "https://github.com/fasuyaaaPNG/AI-ppdb-stemba", "image": "./project/latest.png"},
@@ -286,8 +302,15 @@ elif option == "Proyek":
         {"judul": "Website Laporan PKL", "deskripsi": "Situs yang saya buat untuk membantu guru saya dalam menerima laporan magang dari para siswa. Situs ini tidak menggunakan database namun menggunakan drive dan excel sebagai penyimpanannya", "link": "https://form-laporan-plfvblc1f-fasuyaaapngs-projects.vercel.app/", "image": "./project/pkl.png"},
     ]
     
-    st.subheader("🛠️ Proyek yang Sedang Dikerjakan")
-    st.write("Berikut adalah proyek yang saat ini sedang dalam proses pengerjaan:")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ244Mmx2amJzcnE5eHp1NDgwaGdlaWk4Z3NhaW1rM3MyMW5oN3hjeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TBCVggEb9DzSHTUI19/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Proyek yang sedang dikerjakan
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     for project in on_going:
         st.image(project["image"], width=500, use_container_width=False)
         st.write(f"**{project['judul']}**")
@@ -296,8 +319,15 @@ elif option == "Proyek":
 
     st.divider() 
 
-    st.subheader("✅ Proyek yang Sudah Selesai")
-    st.write("Berikut adalah daftar proyek yang telah selesai dikerjakan:")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXNybTAwa3J1OGh5ODZ1MHFhc2tteHl3ZWp6bXJib3lwbHJobGxnYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wU5GXcDhwLDO7bcKvP/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Proyek yang sudah selesai
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     for project in projects:
         st.image(project["image"], width=300, use_container_width=False)
         st.write(f"**{project['judul']}**")
