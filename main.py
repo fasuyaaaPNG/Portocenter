@@ -75,7 +75,7 @@ if option == "Beranda":
         """
         <h3>
             <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmVkd2RnYm0zaTRoOGl4eDljaGxxY3BqMmhpeWwycXpwNTNiMWt0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Vf3ZKdillTMOOaOho0/giphy.gif" width="60" height="60" style="margin-right: 10px;">
-            Proyek Terbaru
+            Proyek terbaru
         </h3>
         """,
         unsafe_allow_html=True
@@ -99,7 +99,7 @@ if option == "Beranda":
         """
         <h3>
             <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzBkZjNpeWhyMHV0MXRrMmx3bGlvNnBwZGpweWh3eThtYmp2NGZ5ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/7GSmI2v4946YQlOMQj/giphy.gif" width="60" height="60" style="margin-right: 10px;">
-            Sertifikat Terbaru
+            Sertifikat terbaru
         </h3>
         """,
         unsafe_allow_html=True
