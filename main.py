@@ -117,40 +117,6 @@ if option == "Beranda":
         with next(cols):
             st.image(cert["image"], caption=cert["caption"], use_container_width=True)
 
-    # Garis Pemisah
-    st.divider()
-
-    # Subjudul Sosial Media
-    st.markdown(
-        """
-        <h3>
-            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXRmZnZ2NnZidTJsMXhsNDl3OTJlcnh2YmJ2NHB3dDF6M2xqNnJsZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ivtjsoZxjH0j9p4XOe/giphy.gif" width="60" height="60" style="margin-right: 10px;">
-            Sosial Media
-        </h3>
-        """,
-        unsafe_allow_html=True
-    )
-    st.write("Temukan saya di platform berikut:")
-
-    # Ikon sosial media dengan tautan
-    st.markdown(
-        """
-        <div style="display: flex; gap: 20px;">
-            <a href="https://www.linkedin.com/in/dhavin-fasya-alviyanto-20hmsoex00/" target="_blank" style="text-decoration: none;">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
-            </a>
-            <a href="https://github.com/fasuyaaaPNG" target="_blank" style="text-decoration: none;">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40">
-            </a>
-            <a href="https://www.instagram.com/vinfasss" target="_blank" style="text-decoration: none;">
-                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" width="40">
-            </a>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # Garis Pemisah
     st.divider()
 
     # Quotes
@@ -178,6 +144,24 @@ if option == "Beranda":
         <p align="center">
           <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Quote">
         </p>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    st.divider()
+    st.markdown(
+        """
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.linkedin.com/in/dhavin-fasya-alviyanto-20hmsoex00/" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+            </a>
+            <a href="https://github.com/fasuyaaaPNG" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40">
+            </a>
+            <a href="https://www.instagram.com/vinfasss" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" width="40">
+            </a>
+        </div>
         """,
         unsafe_allow_html=True
     )
