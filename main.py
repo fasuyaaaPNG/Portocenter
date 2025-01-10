@@ -14,8 +14,6 @@ option = st.radio(
 )
 
 if option == "Beranda":
-    # Title and introduction
-    st.header("Beranda")
     
     col1, col2 = st.columns([1, 3])
     
@@ -37,7 +35,15 @@ if option == "Beranda":
     )
     
     st.divider()
-    st.subheader("💻 Keahlian")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExemgzNXFoNG15N2ViejVyODB0OGdhZjR2dmh3YWI1ZGptdmFjejZ6cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/BiSeh1hFJ2waKPld1p/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Keahlian
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     
     # Skills
     skills = {
@@ -65,7 +71,15 @@ if option == "Beranda":
             )
     
     st.divider()
-    st.subheader("📁 Proyek Terbaru")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmVkd2RnYm0zaTRoOGl4eDljaGxxY3BqMmhpeWwycXpwNTNiMWt0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Vf3ZKdillTMOOaOho0/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Proyek Terbaru
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
     
     # Projects
     latest_projects = [
