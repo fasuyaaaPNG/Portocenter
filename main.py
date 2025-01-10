@@ -26,9 +26,20 @@ if option == "Beranda":
         st.write(""" 
         Hai, saya Dhavin Fasya Alviyanto, seorang siswa dari SMK Negeri 7 Semarang. Saya memiliki minat yang tinggi terhadap teknologi yang terus berkembang. Minat saya dalam bidang pemrograman dan jaringan mendorong saya untuk terus mencoba hal-hal baru yang saya pelajari. Linux, sebagai sistem operasi kedua yang saya gunakan, membuat saya semakin tertarik dengan perkembangan teknologi yang semakin kompleks.
         """)
+    
+    st.markdown(
+        """
+        <p align="center">
+          <a href="https://github.com/fasuyaaaPNG"><img src="https://readme-typing-svg.herokuapp.com/?lines=CTF%20Player;Full%20Stack%20Developer;Explore%20new%20things;Always%20learning%20new%20technology;110100011000011101001&font=Pacifico&center=true&width=650&height=120&color=58a6ff&vCenter=true&size=45"></a>
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+    
     st.divider()
     st.subheader("💻 Keahlian")
     
+    # Skills
     skills = {
         "Pemrograman": 85,
         "Jaringan": 80,
@@ -36,10 +47,9 @@ if option == "Beranda":
         "Keamanan Siber": 79,
     }
 
-    cols = st.columns(len(skills))  # Create enough columns for each skill
+    cols = st.columns(len(skills))
     for idx, (skill, percentage) in enumerate(skills.items()):
         with cols[idx]:
-            # Circular Progress with Percentage inside
             st.markdown(
                 f"""
                 <div style="display: flex; flex-direction: column; align-items: center;">
@@ -54,11 +64,10 @@ if option == "Beranda":
                 unsafe_allow_html=True
             )
     
-    # Add spacing
-    st.markdown("<br>", unsafe_allow_html=True)
-    
     st.divider()
     st.subheader("📁 Proyek Terbaru")
+    
+    # Projects
     latest_projects = [
         {"judul": "NATIX", "deskripsi": "Natix merupakan program untuk memudahkan penggunaan Nativefier tanpa perlu menginstal dependensi secara manual satu per satu dan tersedia untuk berbagai platform mulai dari Windows, MacOS (High Sierra ke atas), hingga Linux.", "link": "https://github.com/fasuyaaaPNG/Natix/releases", "image": "./project/natix.png"},
         {"judul": "Tildha AI", "deskripsi": "Tildha.AI, asisten kesehatan berbasis kecerdasan buatan, menggunakan bahasa Python dan berbagai pustaka. Proyek ini dirancang untuk memastikan efektivitas dan stabilitasnya, berdasarkan kumpulan data penelitian kami.", "link": "https://github.com/fasuyaaaPNG/Tildha.ai/blob/main/Tildha_ai_Release.ipynb", "image": "./project/tildha.png"},
@@ -66,14 +75,23 @@ if option == "Beranda":
     ]
 
     for project in latest_projects:
-        # Show project image
         st.image(project["image"], width=300, use_container_width=False)
         st.write(f"**{project['judul']}**")
         st.write(project["deskripsi"])
         st.markdown(f"[Lihat Proyek]({project['link']})")
-
+    
     st.divider()
-    st.subheader("🎓 Sertifikat Terbaru")
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzBkZjNpeWhyMHV0MXRrMmx3bGlvNnBwZGpweWh3eThtYmp2NGZ5ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/7GSmI2v4946YQlOMQj/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Sertifikat Terbaru
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # Certificates
     latest_certificates = [
         {"image": "./sertifikat/OracleJava/completionjava.jpg", "caption": "Oracle Completion Java"},
         {"image": "./sertifikat/OracleJava/finalexam.jpg", "caption": "Oracle Final Exam Comulative Java"},
@@ -84,6 +102,71 @@ if option == "Beranda":
     for cert in latest_certificates:
         with next(cols):
             st.image(cert["image"], caption=cert["caption"], use_container_width=True)
+
+    # Garis Pemisah
+    st.divider()
+
+    # Subjudul Sosial Media
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXRmZnZ2NnZidTJsMXhsNDl3OTJlcnh2YmJ2NHB3dDF6M2xqNnJsZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ivtjsoZxjH0j9p4XOe/giphy.gif" width="60" height="60" style="margin-right: 10px;">
+            Sosial Media
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
+    st.write("Temukan saya di platform berikut:")
+
+    # Ikon sosial media dengan tautan
+    st.markdown(
+        """
+        <div style="display: flex; gap: 20px;">
+            <a href="https://www.linkedin.com/in/dhavinfasya" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+            </a>
+            <a href="https://github.com/fasuyaaaPNG" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40">
+            </a>
+            <a href="https://www.instagram.com/dhavinfasya" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" width="40">
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Garis Pemisah
+    st.divider()
+
+    # Quotes
+    st.markdown(
+        """
+        <h3>
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmQyanp0MHl1dXFkMDN5YWJpZDZyZGNwb214YTkwZHU4cTJtcGE0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gIfb10foLDtsWg1W3d/giphy.gif" width="50" height="50" style="margin-right: 10px;">
+            Quotes
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <p align="center">
+            <img src="https://media.giphy.com/media/3pTtbLJ7Jd0YM/giphy.gif" width="300px" height="180px" alt="GIF">
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <p align="center">
+          <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Quote">
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Certificate Gallery Page
 elif option == "Galeri Sertifikat":
@@ -192,6 +275,10 @@ elif option == "Galeri Sertifikat":
 elif option == "Proyek":
     st.header("📂 Proyek")
     
+    on_going = [
+        {"judul": "AI PPDB Stemba", "deskripsi": "Sebuah AI untuk membantu proses PPDB sebagai ganti untuk memudahkan admin sekolah dalam menjawab pertanyaan terkait PPDB. Proyek ini sedang dalam proses sehingga belum ada preview untuk proyeknya", "link": "https://github.com/fasuyaaaPNG/AI-ppdb-stemba", "image": "./project/latest.png"},
+    ]
+    
     projects = [
         {"judul": "NATIX", "deskripsi": "Natix merupakan program untuk memudahkan penggunaan Nativefier tanpa perlu menginstal dependensi secara manual satu per satu dan tersedia untuk berbagai platform mulai dari Windows, MacOS (High Sierra ke atas), hingga Linux.", "link": "https://github.com/fasuyaaaPNG/Natix/releases", "image": "./project/natix.png"},
         {"judul": "Tildha AI", "deskripsi": "Tildha.AI, asisten kesehatan berbasis kecerdasan buatan, menggunakan bahasa Python dan berbagai pustaka. Proyek ini dirancang untuk memastikan efektivitas dan stabilitasnya, berdasarkan kumpulan data penelitian kami.", "link": "https://github.com/fasuyaaaPNG/Tildha.ai/blob/main/Tildha_ai_Release.ipynb", "image": "./project/tildha.png"},
@@ -203,7 +290,11 @@ elif option == "Proyek":
     
     st.subheader("🛠️ Proyek yang Sedang Dikerjakan")
     st.write("Berikut adalah proyek yang saat ini sedang dalam proses pengerjaan:")
-
+    for project in on_going:
+        st.image(project["image"], width=500, use_container_width=False)
+        st.write(f"**{project['judul']}**")
+        st.write(project["deskripsi"])
+        st.markdown(f"[Lihat Proyek]({project['link']})")
 
     st.divider() 
 
