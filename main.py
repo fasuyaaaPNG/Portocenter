@@ -2,10 +2,8 @@ import streamlit as st
 from itertools import cycle
 import math
 
-# Title
 st.title("Portofolio")
 
-# Navigation
 option = st.radio(
     "Pilih bagian: ",
     ["Beranda", "Galeri Sertifikat", "Proyek"],
@@ -28,7 +26,9 @@ if option == "Beranda":
     st.markdown(
         """
         <p align="center">
-          <a href="https://github.com/fasuyaaaPNG"><img src="https://readme-typing-svg.herokuapp.com/?lines=011010000110000101101001;CTF%20Player;Full%20Stack%20Developer;Explore%20new%20things;Always%20learning%20new%20technology&font=Pacifico&center=true&width=650&height=120&color=58a6ff&vCenter=true&size=45"></a>
+            <a href="https://github.com/fasuyaaaPNG">
+                <img src="https://readme-typing-svg.herokuapp.com/?lines=011010000110000101101001;CTF%20Player;Full%20Stack%20Developer;Explore%20new%20things;Always%20learning&font=Rubik%20Glitch&center=true&width=650&height=120&color=ffffff&vCenter=true&size=45" style="filter: drop-shadow(0 0 10px #58a6ff);">
+            </a>
         </p>
         """,
         unsafe_allow_html=True
@@ -45,7 +45,6 @@ if option == "Beranda":
         unsafe_allow_html=True
     )
     
-    # Skills
     skills = {
         "Pemrograman": 85,
         "Jaringan": 80,
@@ -61,7 +60,7 @@ if option == "Beranda":
                 <div style="display: flex; flex-direction: column; align-items: center;">
                     <svg width="100" height="100">
                         <circle cx="50" cy="50" r="40" stroke="#D3D3D3" stroke-width="8" fill="none" />
-                        <circle cx="50" cy="50" r="40" stroke="#00BFFF" stroke-width="8" fill="none" stroke-dasharray="{2 * math.pi * 40}" stroke-dashoffset="{2 * math.pi * 40 * (1 - percentage / 100)}" />
+                        <circle cx="50" cy="50" r="40" stroke="#00BFFF" filter="drop-shadow(0 0 3px #58a6ff)" stroke-width="8" fill="none" stroke-dasharray="{2 * math.pi * 40}" stroke-dashoffset="{2 * math.pi * 40 * (1 - percentage / 100)}" />
                         <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18" font-weight="bold" fill="#00BFFF">{percentage}%</text>
                     </svg>
                     <p style="margin: 0; font-size: 16px; font-weight: bold;">{skill}</p>
@@ -105,11 +104,10 @@ if option == "Beranda":
         unsafe_allow_html=True
     )
     
-    # Certificates
     latest_certificates = [
-        {"image": "./sertifikat/OracleJava/completionjava.jpg", "caption": "Oracle Completion Java"},
-        {"image": "./sertifikat/OracleJava/finalexam.jpg", "caption": "Oracle Final Exam Comulative Java"},
-        {"image": "./sertifikat/OracleJava/finalexamcomulative.jpg", "caption": "Oracle Final Exam Java"},
+        {"image": "./sertifikat/DicodingDbs/sertifikat_course_123_2687890_170125173412/sertifikat_course_123_2687890_170125173412_page-0001.jpg", "caption": "Dasar Pemrograman Web"},
+        {"image": "./sertifikat/DicodingDbs/sertifikat_course_237_2687890_120125175649-2/sertifikat_course_237_2687890_120125175649-2_page-0001.jpg", "caption": "Dasar Pengembang Software"},
+        {"image": "./sertifikat/DicodingDbs/sertifikat_course_302_2687890_120125200232/sertifikat_course_302_2687890_120125200232_page-0001.jpg", "caption": "Programming Logic 101"},
     ]
 
     cols = cycle(st.columns(3))
@@ -119,7 +117,6 @@ if option == "Beranda":
 
     st.divider()
 
-    # Quotes
     st.markdown(
         """
         <h3>
@@ -166,9 +163,7 @@ if option == "Beranda":
         unsafe_allow_html=True
     )
 
-# Certificate Gallery Page
 elif option == "Galeri Sertifikat":
-    # Custom CSS for consistent image height
     st.markdown(
         """
         <style>
@@ -186,7 +181,6 @@ elif option == "Galeri Sertifikat":
 
     st.header("Galeri Sertifikat")
     
-    # Subheading: Competition Certificates
     st.markdown(
         """
         <h3>
@@ -212,7 +206,6 @@ elif option == "Galeri Sertifikat":
         with next(cols):
             st.image(image, caption=competition_captions[idx], use_container_width=True)
 
-    # Subheading: Training Certificates
     st.markdown(
         """
         <h3>
@@ -223,6 +216,10 @@ elif option == "Galeri Sertifikat":
         unsafe_allow_html=True
     )
     training_images = [
+        "./sertifikat/DicodingDbs/sertifikat_course_123_2687890_170125173412/sertifikat_course_123_2687890_170125173412_page-0001.jpg",
+        "./sertifikat/DicodingDbs/sertifikat_course_237_2687890_120125175649-2/sertifikat_course_237_2687890_120125175649-2_page-0001.jpg",
+        "./sertifikat/DicodingDbs/sertifikat_course_302_2687890_120125200232/sertifikat_course_302_2687890_120125200232_page-0001.jpg",
+        "./sertifikat/DicodingDbs/sertifikat_course_317_2687890_120125231248/sertifikat_course_317_2687890_120125231248_page-0001.jpg",
         "./sertifikat/revou.jpg",
         "./sertifikat/DicodingDevOps/dicodingdevops.jpg",
         "./sertifikat/DicodingJaringan/dicodingjaringan.jpg",
@@ -252,6 +249,10 @@ elif option == "Galeri Sertifikat":
         "./sertifikat/skilvulpythonlanjutan.jpg",
     ]
     training_captions = [
+        "Dasar Pemrograman Web",
+        "Dasar Pengembang Software",
+        "Programming Logic 101",
+        "Belajar Dasar Git dengan GitHub",
         "RevoU Software Engineer",
         "Dicoding Dasar-Dasar DevOps",
         "Dicoding Jaringan Komputer",
