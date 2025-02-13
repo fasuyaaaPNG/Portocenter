@@ -20,7 +20,7 @@ if option == "Beranda":
     
     with col2:
         st.write(""" 
-        Hai, saya Dhavin Fasya Alviyanto, seorang siswa dari SMK Negeri 7 Semarang. Saya memiliki minat yang tinggi terhadap teknologi yang terus berkembang. Minat saya dalam bidang pemrograman dan jaringan mendorong saya untuk terus mencoba hal-hal baru yang saya pelajari. Linux, sebagai sistem operasi kedua yang saya gunakan, membuat saya semakin tertarik dengan perkembangan teknologi yang semakin kompleks.
+        Saya Dhavin Fasya Alviyanto, siswa dari SMK Negeri 7 Semarang. Saya memiliki minat yang tinggi terhadap teknologi yang terus berkembang. Minat saya dalam bidang pemrograman dan jaringan mendorong saya untuk terus mencoba hal-hal baru yang saya pelajari. Linux, sebagai sistem operasi kedua yang saya gunakan, membuat saya semakin tertarik dengan perkembangan teknologi yang semakin kompleks.
         """)
     
     st.markdown(
