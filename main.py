@@ -27,7 +27,7 @@ if option == "Beranda":
         """
         <p align="center">
             <a href="https://github.com/fasuyaaaPNG">
-                <img src="https://readme-typing-svg.herokuapp.com/?lines=011010000110000101101001;CTF%20Player;Full%20Stack%20Developer;Explore%20new%20things;Always%20learning&font=Rubik%20Glitch&center=true&width=650&height=120&color=ffffff&vCenter=true&size=45" style="filter: drop-shadow(0 0 10px #58a6ff);">
+                <img src="https://readme-typing-svg.herokuapp.com/?lines=011010000110000101101001;CTF%20Player;FrontEnd%20Developer;Explore%20new%20things;Always%20learning&font=Rubik%20Glitch&center=true&width=650&height=120&color=ffffff&vCenter=true&size=45" style="filter: drop-shadow(0 0 10px #58a6ff);">
             </a>
         </p>
         """,
