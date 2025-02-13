@@ -290,35 +290,15 @@ elif option == "Galeri Sertifikat":
 elif option == "Proyek":
     st.header("Proyek")
     
-    on_going = [
-        {"judul": "AI PPDB Stemba", "deskripsi": "Sebuah AI untuk membantu proses PPDB sebagai ganti untuk memudahkan admin sekolah dalam menjawab pertanyaan terkait PPDB. Proyek ini sedang dalam proses sehingga belum ada preview untuk proyeknya", "link": "https://github.com/fasuyaaaPNG/AI-ppdb-stemba", "image": "./project/latest.png"},
-    ]
-    
     projects = [
         {"judul": "NATIX", "deskripsi": "Natix merupakan program untuk memudahkan penggunaan Nativefier tanpa perlu menginstal dependensi secara manual satu per satu dan tersedia untuk berbagai platform mulai dari Windows, MacOS (High Sierra ke atas), hingga Linux.", "link": "https://github.com/fasuyaaaPNG/Natix/releases", "image": "./project/natix.png"},
         {"judul": "Tildha AI", "deskripsi": "Tildha.AI, asisten kesehatan berbasis kecerdasan buatan, menggunakan bahasa Python dan berbagai pustaka. Proyek ini dirancang untuk memastikan efektivitas dan stabilitasnya, berdasarkan kumpulan data penelitian kami.", "link": "https://github.com/fasuyaaaPNG/Tildha.ai/blob/main/Tildha_ai_Release.ipynb", "image": "./project/tildha.png"},
-        {"judul": "Tripify (Proyek RevoU Course)", "deskripsi": "Web statis ini saya buat untuk melengkapi tugas akhir dari pelatihan 'RevoU Software Engineer' yang diselenggarakan oleh RevoU.", "link": "https://revou-frontend-engineering-gobljd61b-fasuyaaapngs-projects.vercel.app/", "image": "./project/tripify.png"},
-        {"judul": "Linktree SENAKA", "deskripsi": "Situs yang saya buat untuk ekstrakulikuler saya di sekolah. Situs ini bertujuan untuk memudahkan calon anggota menemukan berbagai informasi serta pendaftaran melalui situs ini.", "link": "https://linkhub-senaka-py7f1z1mi-fasuyaaapngs-projects.vercel.app/", "image": "./project/linktreesenaka.jpg"},
-        {"judul": "Website SENAKA", "deskripsi": "Situs yang saya buat untuk ekstrakulikuler saya di sekolah. Situs ini bertujuan sebagai pengenalan ekstrakulikuler SENAKA terhadap para anggota baru. Situs ini juga menjadi informasi tambahan untuk para calon anggota yang akan mendftar. ", "link": "https://web-senaka-9ctnrw9al-fasuyaaapngs-projects.vercel.app/", "image": "./project/websenaka.jpg"},
-        {"judul": "Website Laporan PKL", "deskripsi": "Situs yang saya buat untuk membantu guru saya dalam menerima laporan magang dari para siswa. Situs ini tidak menggunakan database namun menggunakan drive dan excel sebagai penyimpanannya", "link": "https://form-laporan-plfvblc1f-fasuyaaapngs-projects.vercel.app/", "image": "./project/pkl.png"},
+        {"judul": "Tripify", "deskripsi": "Situs statis ini saya buat untuk melengkapi tugas akhir dari pelatihan 'RevoU Software Engineer' yang diselenggarakan oleh RevoU.", "link": "https://revou-frontend-engineering-gobljd61b-fasuyaaapngs-projects.vercel.app/", "image": "./project/tripify.png"},
+        {"judul": "Linktree SENAKA (mobile layout)", "deskripsi": "Situs yang saya buat untuk ekstrakulikuler saya di sekolah. Situs ini bertujuan untuk memudahkan calon anggota menemukan berbagai informasi serta pendaftaran melalui situs ini.", "link": "https://linkhub-senaka-py7f1z1mi-fasuyaaapngs-projects.vercel.app/", "image": "./project/linktreesenaka.jpg"},
+        {"judul": "Website SENAKA (mobile layout)", "deskripsi": "Situs yang saya buat untuk ekstrakulikuler saya di sekolah. Situs ini bertujuan sebagai pengenalan ekstrakulikuler SENAKA terhadap para anggota baru. Situs ini juga menjadi informasi tambahan untuk para calon anggota yang akan mendftar. ", "link": "https://web-senaka-9ctnrw9al-fasuyaaapngs-projects.vercel.app/", "image": "./project/websenaka.jpg"},
+        {"judul": "Speakify", "deskripsi": "Situs yang saya buat buat sebagai media untuk melatih keahlian pemrograman saya. Situs ini bersifat statis dan hanya terdapat satu page berupa landing page.", "link": "https://speakify-net.vercel.app/", "image": "./project/speakify.png"},
+        {"judul": "Quandary (mobile layout)", "deskripsi": "Situs yang saya buat buat sebagai tugas pembuatan situs fullstack kelas 11. Situs ini dibuat menggunakan framework Next JS dan menggunakan database supabase.", "link": "https://quandary-net.vercel.app", "image": "./project/quandary.png"},
     ]
-    
-    st.markdown(
-        """
-        <h3>
-            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ244Mmx2amJzcnE5eHp1NDgwaGdlaWk4Z3NhaW1rM3MyMW5oN3hjeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TBCVggEb9DzSHTUI19/giphy.gif" width="60" height="60" style="margin-right: 10px;">
-            Proyek yang sedang dikerjakan
-        </h3>
-        """,
-        unsafe_allow_html=True
-    )
-    for project in on_going:
-        st.image(project["image"], width=500, use_container_width=False)
-        st.write(f"**{project['judul']}**")
-        st.write(project["deskripsi"])
-        st.markdown(f"[Lihat Proyek]({project['link']})")
-
-    st.divider() 
 
     st.markdown(
         """
