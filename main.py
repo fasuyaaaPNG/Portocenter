@@ -88,7 +88,7 @@ if option == "Beranda":
     ]
 
     for project in latest_projects:
-        st.image(project["image"], width=300, use_container_width=False)
+        st.image(project["image"])
         st.write(f"**{project['judul']}**")
         st.write(project["deskripsi"])
         st.markdown(f"[Lihat Proyek]({project['link']})")
