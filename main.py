@@ -46,10 +46,10 @@ if option == "Beranda":
     )
     
     skills = {
-        "Pemrograman": 85,
+        "Pemrograman": 87,
         "Jaringan": 80,
-        "Linux": 78,
-        "Keamanan Siber": 79,
+        "Linux": 83,
+        "Keamanan Siber": 85,
     }
 
     cols = st.columns(len(skills))
@@ -304,7 +304,7 @@ elif option == "Proyek":
         """
         <h3>
             <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXNybTAwa3J1OGh5ODZ1MHFhc2tteHl3ZWp6bXJib3lwbHJobGxnYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wU5GXcDhwLDO7bcKvP/giphy.gif" width="60" height="60" style="margin-right: 10px;">
-            Proyek yang sudah selesai
+            Proyek saya
         </h3>
         """,
         unsafe_allow_html=True
