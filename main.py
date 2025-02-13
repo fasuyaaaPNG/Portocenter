@@ -310,7 +310,7 @@ elif option == "Proyek":
         unsafe_allow_html=True
     )
     for project in projects:
-        st.image(project["image"], width=300, use_container_width=False)
+        st.image(project["image"])
         st.write(f"**{project['judul']}**")
         st.write(project["deskripsi"])
         st.markdown(f"[Lihat Proyek]({project['link']})")
